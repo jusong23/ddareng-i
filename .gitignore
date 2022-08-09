@@ -3,7 +3,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Never Map API
-NMapsMap
+/Users/song._.327/Documents/RisingCamp/RisigingCamp_5th_Network/nenetwork/Pods/NMapsMap
 
 ## User settings
 xcuserdata/
