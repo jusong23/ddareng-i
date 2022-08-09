@@ -29,7 +29,7 @@ func getCycleData() {
                 var stationLatitudeArray = result.rentBikeStatus.row.map({
                     $0.stationLatitude
                 })
-                
+                 
                 var stationLongitudeArray = result.rentBikeStatus.row.map({
                     $0.stationLongitude
                 })
