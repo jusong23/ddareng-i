@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-728" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--따릉이-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nenetwork" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,11 +35,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="czu-0Q-7yp">
-                        <barButtonItem key="leftBarButtonItem" image="list.star" catalog="system" id="fa0-qZ-YUY"/>
+                    <navigationItem key="navigationItem" title="따릉이" id="czu-0Q-7yp">
+                        <barButtonItem key="leftBarButtonItem" image="list.star" catalog="system" id="fa0-qZ-YUY">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem image="person" catalog="system" id="k2F-aN-rDz"/>
+                            <barButtonItem image="person" catalog="system" id="k2F-aN-rDz">
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
                             <barButtonItem image="magnifyingglass" catalog="system" id="WMk-z3-MFq">
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="tapSearchButton:" destination="BYZ-38-t0r" id="Xbm-07-3SI"/>
                                 </connections>
@@ -70,9 +75,35 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDz-L9-a27">
                                                 <rect key="frame" x="12" y="8" width="390" height="35"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="대여소 명 또는 번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDO-eh-rgp">
+                                                        <rect key="frame" x="8" y="0.0" width="345" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PF4-vw-A24">
+                                                        <rect key="frame" x="365" y="9" width="17" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="17" id="Ppe-0y-qDN"/>
+                                                            <constraint firstAttribute="width" constant="17" id="kIH-rb-sNL"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="magnifyingglass" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="searchArea:" destination="gV7-sE-Td2" eventType="touchUpInside" id="g4l-Wy-siw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="fMi-nS-fJb"/>
+                                                    <constraint firstItem="PF4-vw-A24" firstAttribute="top" secondItem="VDz-L9-a27" secondAttribute="top" constant="9" id="kkQ-J9-Uhp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PF4-vw-A24" secondAttribute="trailing" constant="8" id="qGB-E0-tNa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PF4-vw-A24" secondAttribute="bottom" constant="9" id="wle-r5-PgN"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -80,12 +111,20 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색 결과가 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxJ-M2-zKq">
+                                                <rect key="frame" x="129.5" y="372" width="155" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="VDz-L9-a27" firstAttribute="leading" secondItem="d61-gb-Fqz" secondAttribute="leading" constant="12" id="IeG-5m-t8e"/>
+                                            <constraint firstItem="lxJ-M2-zKq" firstAttribute="centerY" secondItem="d61-gb-Fqz" secondAttribute="centerY" id="VlO-Z5-zuI"/>
                                             <constraint firstItem="VDz-L9-a27" firstAttribute="top" secondItem="d61-gb-Fqz" secondAttribute="top" constant="8" id="rCa-zk-Wp4"/>
                                             <constraint firstAttribute="trailing" secondItem="VDz-L9-a27" secondAttribute="trailing" constant="12" id="wIQ-Uw-fNb"/>
+                                            <constraint firstItem="lxJ-M2-zKq" firstAttribute="centerX" secondItem="d61-gb-Fqz" secondAttribute="centerX" id="wi0-k8-9Zc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -113,8 +152,14 @@
                     <navigationItem key="navigationItem" title="대여소 검색" id="jcV-Hm-DEg">
                         <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="AyV-ZR-RcQ">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tapBackButton:" destination="gV7-sE-Td2" id="lgm-PR-hQe"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="rDO-eh-rgp" id="aVl-fS-g1F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cH1-uJ-p84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,9 @@
 		9B8E4F5028A1109900DB566D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4E28A1109900DB566D /* LaunchScreen.storyboard */; };
 		9BB3D07328A23B0300C4C3AD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D07228A23B0300C4C3AD /* SearchViewController.swift */; };
 		9BB3D07528A23F4000C4C3AD /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D07428A23F4000C4C3AD /* componentSetting.swift */; };
+		9BB3D07828A249DD00C4C3AD /* API Callers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D07728A249DD00C4C3AD /* API Callers.swift */; };
+		9BB3D07B28A24A6000C4C3AD /* Ddarengi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D07A28A24A6000C4C3AD /* Ddarengi.swift */; };
+		9BB3D07E28A24B9D00C4C3AD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9BB3D07D28A24B9D00C4C3AD /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,8 @@
 		9B8E4F5128A1109900DB566D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB3D07228A23B0300C4C3AD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9BB3D07428A23F4000C4C3AD /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = componentSetting.swift; sourceTree = "<group>"; };
+		9BB3D07728A249DD00C4C3AD /* API Callers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Callers.swift"; sourceTree = "<group>"; };
+		9BB3D07A28A24A6000C4C3AD /* Ddarengi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ddarengi.swift; sourceTree = "<group>"; };
 		BDC79618F3C4BD537FAD6B82 /* Pods-nenetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nenetwork.debug.xcconfig"; path = "Target Support Files/Pods-nenetwork/Pods-nenetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB3D07E28A24B9D00C4C3AD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,8 @@
 		9B8E4F4228A1109600DB566D /* nenetwork */ = {
 			isa = PBXGroup;
 			children = (
+				9BB3D07928A24A5000C4C3AD /* Methods */,
+				9BB3D07628A249BE00C4C3AD /* API Models */,
 				9B8E4F4328A1109600DB566D /* AppDelegate.swift */,
 				9B8E4F4528A1109600DB566D /* SceneDelegate.swift */,
 				9BB3D07228A23B0300C4C3AD /* SearchViewController.swift */,
@@ -91,6 +99,22 @@
 				9BB3D07428A23F4000C4C3AD /* componentSetting.swift */,
 			);
 			path = nenetwork;
+			sourceTree = "<group>";
+		};
+		9BB3D07628A249BE00C4C3AD /* API Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BB3D07A28A24A6000C4C3AD /* Ddarengi.swift */,
+			);
+			path = "API Models";
+			sourceTree = "<group>";
+		};
+		9BB3D07928A24A5000C4C3AD /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				9BB3D07728A249DD00C4C3AD /* API Callers.swift */,
+			);
+			path = Methods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +135,9 @@
 			dependencies = (
 			);
 			name = nenetwork;
+			packageProductDependencies = (
+				9BB3D07D28A24B9D00C4C3AD /* Alamofire */,
+			);
 			productName = nenetwork;
 			productReference = 9B8E4F4028A1109600DB566D /* nenetwork.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 9B8E4F3728A1109600DB566D;
+			packageReferences = (
+				9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9B8E4F4128A1109600DB566D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB3D07828A249DD00C4C3AD /* API Callers.swift in Sources */,
+				9BB3D07B28A24A6000C4C3AD /* Ddarengi.swift in Sources */,
 				9B8E4F4828A1109600DB566D /* ViewController.swift in Sources */,
 				9B8E4F4428A1109600DB566D /* AppDelegate.swift in Sources */,
 				9BB3D07328A23B0300C4C3AD /* SearchViewController.swift in Sources */,
@@ -347,6 +379,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -438,6 +471,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BB3D07D28A24B9D00C4C3AD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B8E4F3828A1109600DB566D /* Project object */;
 }
