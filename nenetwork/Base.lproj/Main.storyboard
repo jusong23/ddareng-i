@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SNo-Rw-aah">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="75w-mf-NAt">
+            <objects>
+                <navigationController id="SNo-Rw-aah" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bwp-3V-jCc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="48y-hq-SOW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwJ-9w-LCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nenetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="czu-0Q-7yp">
+                        <barButtonItem key="leftBarButtonItem" image="list.star" catalog="system" id="fa0-qZ-YUY"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="person" catalog="system" id="k2F-aN-rDz"/>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="WMk-z3-MFq">
+                                <connections>
+                                    <action selector="tapSearchButton:" destination="BYZ-38-t0r" id="Xbm-07-3SI"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="gV7-sE-Td2" kind="show" id="DQg-zc-JKL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="94"/>
+        </scene>
+        <!--대여소 검색-->
+        <scene sceneID="4lL-uG-0Hh">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gV7-sE-Td2" customClass="SearchViewController" customModule="nenetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VYw-Nl-xTU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-B9-WOX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d61-gb-Fqz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDz-L9-a27">
+                                                <rect key="frame" x="12" y="8" width="390" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fMi-nS-fJb"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="VDz-L9-a27" firstAttribute="leading" secondItem="d61-gb-Fqz" secondAttribute="leading" constant="12" id="IeG-5m-t8e"/>
+                                            <constraint firstItem="VDz-L9-a27" firstAttribute="top" secondItem="d61-gb-Fqz" secondAttribute="top" constant="8" id="rCa-zk-Wp4"/>
+                                            <constraint firstAttribute="trailing" secondItem="VDz-L9-a27" secondAttribute="trailing" constant="12" id="wIQ-Uw-fNb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d61-gb-Fqz" firstAttribute="width" secondItem="S7d-B9-WOX" secondAttribute="width" id="01N-OG-psF"/>
+                                    <constraint firstAttribute="trailing" secondItem="d61-gb-Fqz" secondAttribute="trailing" id="1Qn-c9-Knu"/>
+                                    <constraint firstItem="d61-gb-Fqz" firstAttribute="leading" secondItem="S7d-B9-WOX" secondAttribute="leading" id="VqO-Xk-ce3"/>
+                                    <constraint firstItem="d61-gb-Fqz" firstAttribute="top" secondItem="S7d-B9-WOX" secondAttribute="top" id="p0H-Tu-STg"/>
+                                    <constraint firstAttribute="bottom" secondItem="d61-gb-Fqz" secondAttribute="bottom" constant="8" id="skh-ud-K5f"/>
+                                    <constraint firstItem="d61-gb-Fqz" firstAttribute="height" secondItem="S7d-B9-WOX" secondAttribute="height" multiplier="0.989664" id="vMW-i9-4Qm"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="opc-sD-BPh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="1b6-al-Ant"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XwE-eq-3xf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S7d-B9-WOX" firstAttribute="top" secondItem="XwE-eq-3xf" secondAttribute="top" id="Qgv-v7-tTo"/>
+                            <constraint firstItem="S7d-B9-WOX" firstAttribute="bottom" secondItem="XwE-eq-3xf" secondAttribute="bottom" id="WdM-wt-fUH"/>
+                            <constraint firstItem="S7d-B9-WOX" firstAttribute="leading" secondItem="XwE-eq-3xf" secondAttribute="leading" id="jh3-UF-FqO"/>
+                            <constraint firstItem="S7d-B9-WOX" firstAttribute="trailing" secondItem="XwE-eq-3xf" secondAttribute="trailing" id="q1H-Rv-1GY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="대여소 검색" id="jcV-Hm-DEg">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="AyV-ZR-RcQ">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH1-uJ-p84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="list.star" catalog="system" width="128" height="94"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
