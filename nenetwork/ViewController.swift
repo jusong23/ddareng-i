@@ -68,9 +68,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
 
     }
-    
-    
-    
-    
-    
+
 }
