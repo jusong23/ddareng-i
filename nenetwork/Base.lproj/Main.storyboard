@@ -69,11 +69,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDz-L9-a27">
-                                                <rect key="frame" x="12" y="8" width="390" height="50"/>
+                                                <rect key="frame" x="12" y="8" width="390" height="35"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="fMi-nS-fJb"/>
+                                                    <constraint firstAttribute="height" constant="35" id="fMi-nS-fJb"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

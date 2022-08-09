@@ -14,6 +14,7 @@
 		9B8E4F4D28A1109900DB566D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4C28A1109900DB566D /* Assets.xcassets */; };
 		9B8E4F5028A1109900DB566D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4E28A1109900DB566D /* LaunchScreen.storyboard */; };
 		9BB3D07328A23B0300C4C3AD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D07228A23B0300C4C3AD /* SearchViewController.swift */; };
+		9BB3D07528A23F4000C4C3AD /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D07428A23F4000C4C3AD /* componentSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9B8E4F4F28A1109900DB566D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B8E4F5128A1109900DB566D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB3D07228A23B0300C4C3AD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9BB3D07428A23F4000C4C3AD /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = componentSetting.swift; sourceTree = "<group>"; };
 		BDC79618F3C4BD537FAD6B82 /* Pods-nenetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nenetwork.debug.xcconfig"; path = "Target Support Files/Pods-nenetwork/Pods-nenetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				9B8E4F4C28A1109900DB566D /* Assets.xcassets */,
 				9B8E4F4E28A1109900DB566D /* LaunchScreen.storyboard */,
 				9B8E4F5128A1109900DB566D /* Info.plist */,
+				9BB3D07428A23F4000C4C3AD /* componentSetting.swift */,
 			);
 			path = nenetwork;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				9B8E4F4428A1109600DB566D /* AppDelegate.swift in Sources */,
 				9BB3D07328A23B0300C4C3AD /* SearchViewController.swift in Sources */,
 				9B8E4F4628A1109600DB566D /* SceneDelegate.swift in Sources */,
+				9BB3D07528A23F4000C4C3AD /* componentSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
