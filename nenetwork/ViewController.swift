@@ -83,7 +83,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             marker2.captionColor = UIColor.red
             marker2.captionText = "6"
             marker2.mapView = mapView
-            
+               
             let marker3 = NMFMarker()
             marker3.position = NMGLatLng(lat: 37.6231, lng: 127.0601)
             marker3.width = 25
