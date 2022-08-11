@@ -9,7 +9,6 @@ import UIKit
 import CoreLocation
 import NMapsMap
 
-
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()

@@ -259,7 +259,7 @@
                         <outlet property="cycleCount_Big" destination="U0E-d8-b5L" id="i9N-y6-LnB"/>
                         <outlet property="greenLight" destination="tkB-sI-z4w" id="HbJ-9X-rCC"/>
                         <outlet property="map" destination="r2X-Z6-di2" id="gLc-Zl-dGn"/>
-                        <outlet property="mapView" destination="9oh-mt-DTd" id="HMu-hd-reW"/>
+                        <outlet property="mapView" destination="9oh-mt-DTd" id="ctQ-gk-0GQ"/>
                         <outlet property="navi" destination="jG8-Fa-G1l" id="q2O-Jy-hZe"/>
                         <outlet property="star" destination="TZe-2M-2Zi" id="c4n-Rw-ZqI"/>
                         <outlet property="willBeOpenWhenItClicked" destination="Kqv-Rk-z1t" id="HYI-3S-rW9"/>

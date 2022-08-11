@@ -27,10 +27,12 @@
 		9BE6FD9B28A4D5E5000478DC /* SearchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6FD9A28A4D5E4000478DC /* SearchDataModel.swift */; };
 		9BEA059F28A384CE00F94528 /* DataForMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA059E28A384CE00F94528 /* DataForMarker.swift */; };
 		9BEA05A328A3857B00F94528 /* Data_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA05A228A3857B00F94528 /* Data_Struct.swift */; };
+		FD0DCB6B8BDC8F8425D44262 /* Pods_nenetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9456A9F0A9A76B1BB1011DB6 /* Pods_nenetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39791708B9B23E0D2A99CA05 /* Pods-nenetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nenetwork.release.xcconfig"; path = "Target Support Files/Pods-nenetwork/Pods-nenetwork.release.xcconfig"; sourceTree = "<group>"; };
+		9456A9F0A9A76B1BB1011DB6 /* Pods_nenetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nenetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B29EF7028A5002F00124BF8 /* IMG_1833.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1833.jpg; path = ../../../../../../Downloads/IMG_1833.jpg; sourceTree = "<group>"; };
 		9B29EF7228A517CD00124BF8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		9B29EF7428A5193400124BF8 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB3D07E28A24B9D00C4C3AD /* Alamofire in Frameworks */,
+				FD0DCB6B8BDC8F8425D44262 /* Pods_nenetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		92EBE844F2E58DE170C44581 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9456A9F0A9A76B1BB1011DB6 /* Pods_nenetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,7 +238,7 @@
 			);
 			mainGroup = 9B8E4F3728A1109600DB566D;
 			packageReferences = (
-				9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = 9B8E4F4128A1109600DB566D /* Products */;
 			projectDirPath = "";
@@ -549,7 +553,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -562,7 +566,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9BB3D07D28A24B9D00C4C3AD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
