@@ -11,6 +11,11 @@
 		9B29EF7328A517CE00124BF8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29EF7228A517CD00124BF8 /* WeatherViewController.swift */; };
 		9B29EF7528A5193400124BF8 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29EF7428A5193400124BF8 /* WeatherInfo.swift */; };
 		9B347ABC28A5F8D9005CD1A3 /* IMG_1837.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B347ABB28A5F8D8005CD1A3 /* IMG_1837.jpg */; };
+		9B6F3FF328A6141000037391 /* IMG_1838.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F3FF228A6140E00037391 /* IMG_1838.jpg */; };
+		9B6F3FF728A6163200037391 /* 스크린샷_2022-08-12_14.01.01-removebg-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F3FF628A6163200037391 /* 스크린샷_2022-08-12_14.01.01-removebg-preview.png */; };
+		9B6F3FF928A6167700037391 /* 스크린샷 2022-08-12 14.02.36.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F3FF828A6167700037391 /* 스크린샷 2022-08-12 14.02.36.png */; };
+		9B6F3FFB28A6192400037391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F3FFA28A6192300037391 /* LoginViewController.swift */; };
+		9B6F3FFD28A61BF800037391 /* 스크린샷 2022-08-12 14.26.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F3FFC28A61BF600037391 /* 스크린샷 2022-08-12 14.26.08.png */; };
 		9B8E4F4428A1109600DB566D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4328A1109600DB566D /* AppDelegate.swift */; };
 		9B8E4F4628A1109600DB566D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4528A1109600DB566D /* SceneDelegate.swift */; };
 		9B8E4F4828A1109600DB566D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4728A1109600DB566D /* ViewController.swift */; };
@@ -38,6 +43,11 @@
 		9B29EF7228A517CD00124BF8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		9B29EF7428A5193400124BF8 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		9B347ABB28A5F8D8005CD1A3 /* IMG_1837.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1837.jpg; path = ../../../../../../Downloads/IMG_1837.jpg; sourceTree = "<group>"; };
+		9B6F3FF228A6140E00037391 /* IMG_1838.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1838.jpg; path = ../../../../../../Downloads/IMG_1838.jpg; sourceTree = "<group>"; };
+		9B6F3FF628A6163200037391 /* 스크린샷_2022-08-12_14.01.01-removebg-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "스크린샷_2022-08-12_14.01.01-removebg-preview.png"; path = "../../../../../../Downloads/스크린샷_2022-08-12_14.01.01-removebg-preview.png"; sourceTree = "<group>"; };
+		9B6F3FF828A6167700037391 /* 스크린샷 2022-08-12 14.02.36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "스크린샷 2022-08-12 14.02.36.png"; path = "../../../../../../Desktop/화면기록/스크린샷 2022-08-12 14.02.36.png"; sourceTree = "<group>"; };
+		9B6F3FFA28A6192300037391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B6F3FFC28A61BF600037391 /* 스크린샷 2022-08-12 14.26.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "스크린샷 2022-08-12 14.26.08.png"; path = "../../../../../../../../var/folders/3z/1d_1pw1s1vqd8nrfp044b0840000gn/T/TemporaryItems/NSIRD_screencaptureui_dScEg4/스크린샷 2022-08-12 14.26.08.png"; sourceTree = "<group>"; };
 		9B8E4F4028A1109600DB566D /* nenetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nenetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8E4F4328A1109600DB566D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B8E4F4528A1109600DB566D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +102,10 @@
 		9B29EF6F28A5001E00124BF8 /* TestImage */ = {
 			isa = PBXGroup;
 			children = (
+				9B6F3FFC28A61BF600037391 /* 스크린샷 2022-08-12 14.26.08.png */,
+				9B6F3FF828A6167700037391 /* 스크린샷 2022-08-12 14.02.36.png */,
+				9B6F3FF628A6163200037391 /* 스크린샷_2022-08-12_14.01.01-removebg-preview.png */,
+				9B6F3FF228A6140E00037391 /* IMG_1838.jpg */,
 				9B347ABB28A5F8D8005CD1A3 /* IMG_1837.jpg */,
 				9B29EF7028A5002F00124BF8 /* IMG_1833.jpg */,
 			);
@@ -129,6 +143,7 @@
 				9B29EF7228A517CD00124BF8 /* WeatherViewController.swift */,
 				9B8E4F4728A1109600DB566D /* ViewController.swift */,
 				9B8E4F4928A1109600DB566D /* Main.storyboard */,
+				9B6F3FFA28A6192300037391 /* LoginViewController.swift */,
 				9B8E4F4C28A1109900DB566D /* Assets.xcassets */,
 				9B8E4F4E28A1109900DB566D /* LaunchScreen.storyboard */,
 				9B8E4F5128A1109900DB566D /* Info.plist */,
@@ -258,10 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B8E4F5028A1109900DB566D /* LaunchScreen.storyboard in Resources */,
+				9B6F3FF328A6141000037391 /* IMG_1838.jpg in Resources */,
 				9B29EF7128A5002F00124BF8 /* IMG_1833.jpg in Resources */,
+				9B6F3FF928A6167700037391 /* 스크린샷 2022-08-12 14.02.36.png in Resources */,
 				9BE6FD9628A4CBFB000478DC /* TableViewCell.xib in Resources */,
 				9B8E4F4D28A1109900DB566D /* Assets.xcassets in Resources */,
 				9B347ABC28A5F8D9005CD1A3 /* IMG_1837.jpg in Resources */,
+				9B6F3FF728A6163200037391 /* 스크린샷_2022-08-12_14.01.01-removebg-preview.png in Resources */,
+				9B6F3FFD28A61BF800037391 /* 스크린샷 2022-08-12 14.26.08.png in Resources */,
 				9B8E4F4B28A1109600DB566D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +337,7 @@
 				9B29EF7528A5193400124BF8 /* WeatherInfo.swift in Sources */,
 				9BB3D07828A249DD00C4C3AD /* API Callers.swift in Sources */,
 				9BEA059F28A384CE00F94528 /* DataForMarker.swift in Sources */,
+				9B6F3FFB28A6192400037391 /* LoginViewController.swift in Sources */,
 				9BB3D07B28A24A6000C4C3AD /* Ddarengi.swift in Sources */,
 				9BE6FD9928A4D439000478DC /* SearchData.swift in Sources */,
 				9B29EF7328A517CE00124BF8 /* WeatherViewController.swift in Sources */,
@@ -484,6 +504,9 @@
 				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nenetwork/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치정보 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치정보 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치정보 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -515,6 +538,9 @@
 				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nenetwork/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치정보 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치정보 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치정보 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

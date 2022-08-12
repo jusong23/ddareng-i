@@ -26,6 +26,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var navi: UIButton!
     @IBOutlet weak var greenLight: UIButton!
     
+    @IBOutlet var squareView: UIView!
+    @IBOutlet var reLoadView: UIView!
+
+    
+    @IBOutlet var sun: UIButton!
+    @IBOutlet var reLoad: UIButton!
+    @IBOutlet var info: UIButton!
+    @IBOutlet var green: UIButton!
+    @IBOutlet var square: UIButton!
+    
     
     @IBAction func tapSearchButton(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController else {return}
@@ -33,26 +43,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 
-    @IBAction func tapWeatherButton(_ sender: Any) {
-//        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "WeatherViewController") as? WeatherViewController else {return}
-//        self.navigationController?.pushViewController(viewController, animated: true)
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UserDefaults.standard.setValue(0, forKey: "Selected")
-        
-        
-//        let mapView = NMFMapView(frame: view.frame)
+        self.navigationController?.navigationBar.isHidden = false
         self.mapView.translatesAutoresizingMaskIntoConstraints = false
-//        self.view.addSubview(mapView)
 
-//        mapView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
-//        mapView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-//        mapView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-//        mapView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-         
-        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -170,7 +168,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if UserDefaults.standard.integer(forKey: "Selected") != 0 {
             print("it`s woring")
             print(newLot)
+            self.sun.tintColor = .yellow
+            self.info.tintColor = .white
+            self.green.tintColor = .green
+            self.square.tintColor = .lightGray
+            self.reLoad.tintColor = .lightGray
         }
+
+        
         self.willBeOpenWhenItClicked.reloadInputViews()
     }
     
@@ -205,6 +210,9 @@ extension ViewController: SendDataDelegate {
         
         marker.touchHandler = { (overlay: NMFOverlay) -> Bool in
             self.willBeOpenWhenItClicked.isHidden = false
+            self.reLoadView.isHidden = true
+            self.squareView.isHidden = true
+            
             self.greenLight.tintColor = .green
             self.star.tintColor = .lightGray
             self.map.tintColor = .lightGray
