@@ -160,6 +160,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
         } else {
             print("위치 서비스 Off 상태")
+
         }
 
         

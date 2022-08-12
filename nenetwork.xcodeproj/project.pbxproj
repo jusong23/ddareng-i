@@ -10,6 +10,7 @@
 		9B29EF7128A5002F00124BF8 /* IMG_1833.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B29EF7028A5002F00124BF8 /* IMG_1833.jpg */; };
 		9B29EF7328A517CE00124BF8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29EF7228A517CD00124BF8 /* WeatherViewController.swift */; };
 		9B29EF7528A5193400124BF8 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29EF7428A5193400124BF8 /* WeatherInfo.swift */; };
+		9B347ABC28A5F8D9005CD1A3 /* IMG_1837.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B347ABB28A5F8D8005CD1A3 /* IMG_1837.jpg */; };
 		9B8E4F4428A1109600DB566D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4328A1109600DB566D /* AppDelegate.swift */; };
 		9B8E4F4628A1109600DB566D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4528A1109600DB566D /* SceneDelegate.swift */; };
 		9B8E4F4828A1109600DB566D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4F4728A1109600DB566D /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		9B29EF7028A5002F00124BF8 /* IMG_1833.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1833.jpg; path = ../../../../../../Downloads/IMG_1833.jpg; sourceTree = "<group>"; };
 		9B29EF7228A517CD00124BF8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		9B29EF7428A5193400124BF8 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		9B347ABB28A5F8D8005CD1A3 /* IMG_1837.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1837.jpg; path = ../../../../../../Downloads/IMG_1837.jpg; sourceTree = "<group>"; };
 		9B8E4F4028A1109600DB566D /* nenetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nenetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8E4F4328A1109600DB566D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B8E4F4528A1109600DB566D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		9B29EF6F28A5001E00124BF8 /* TestImage */ = {
 			isa = PBXGroup;
 			children = (
+				9B347ABB28A5F8D8005CD1A3 /* IMG_1837.jpg */,
 				9B29EF7028A5002F00124BF8 /* IMG_1833.jpg */,
 			);
 			path = TestImage;
@@ -238,7 +241,7 @@
 			);
 			mainGroup = 9B8E4F3728A1109600DB566D;
 			packageReferences = (
-				9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 9B8E4F4128A1109600DB566D /* Products */;
 			projectDirPath = "";
@@ -258,6 +261,7 @@
 				9B29EF7128A5002F00124BF8 /* IMG_1833.jpg in Resources */,
 				9BE6FD9628A4CBFB000478DC /* TableViewCell.xib in Resources */,
 				9B8E4F4D28A1109900DB566D /* Assets.xcassets in Resources */,
+				9B347ABC28A5F8D9005CD1A3 /* IMG_1837.jpg in Resources */,
 				9B8E4F4B28A1109600DB566D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,7 +557,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -566,7 +570,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9BB3D07D28A24B9D00C4C3AD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = 9BB3D07C28A24B9D00C4C3AD /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
